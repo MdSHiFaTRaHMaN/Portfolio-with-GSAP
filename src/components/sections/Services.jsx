@@ -5,6 +5,8 @@ import ServicesCard from '../ServicesCard';
 import { animateSplitText } from '@/lib/animations';
 import { textSplitterIntoChar } from '@/lib/functions';
 
+import TechExperience from '../design/TechExperience';
+
 export default function Services() {
   const [whatIDoHtml, setWhatIDoHtml] = useState('');
 
@@ -65,7 +67,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="padding-x mb-20">
+    <section id="services" className="padding-x mb-12">
       <div className="flex w-full flex-col">
         <h3
           id="what-i-do"
@@ -75,16 +77,21 @@ export default function Services() {
 
         <div
           id="services-text"
-          className="grid-gap text-flax-smoke-300 mt-[5%] grid grid-cols-12 justify-end opacity-0 lg:grid"
+          className="mt-[5%] grid grid-cols-12 gap-8 lg:gap-12 items-start text-flax-smoke-300 opacity-0"
         >
-          <p className="heading-6 text-flax-smoke-300/85 col-span-4 col-start-0 text-center text-nowrap md:col-start-4">
-            ( SERVICES )
-          </p>
-          <p className="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold md:col-span-5">
-            User-Friendly interface don't happen by chance, they are built with
-            intention. I code intuitive responsive solutions that make your users'
-            journey effortless
-          </p>
+          <div className="col-span-12 lg:col-span-7 xl:col-span-7">
+            <TechExperience />
+          </div>
+          <div className="col-span-12 lg:col-span-5 xl:col-span-5 flex flex-col justify-between gap-4 pt-1">
+            <p className="heading-6 text-flax-smoke-300/85 uppercase tracking-wider font-semibold">
+              ( SERVICES )
+            </p>
+            <p className="heading-4 font-fancy w-full text-balance sm:font-semibold">
+              User-Friendly interface don't happen by chance, they are built with
+              intention. I code intuitive responsive solutions that make your users'
+              journey effortless
+            </p>
+          </div>
         </div>
       </div>
 

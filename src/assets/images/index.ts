@@ -1,4 +1,5 @@
 import profile from './profile.webp';
+import hero from './sifatrahman.jpg';
 import profile2 from './profile2.webp';
 import esmail from './esmail.webp';
 import mohammad from './mohammad.webp';
@@ -10,6 +11,7 @@ import workBg5 from './5.webp';
 
 export {
   profile,
+  hero,
   profile2,
   esmail,
   mohammad,

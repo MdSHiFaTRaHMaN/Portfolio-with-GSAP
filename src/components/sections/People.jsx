@@ -26,7 +26,7 @@ export default function People() {
         </div>
       </div>
 
-      <Slider />
+      {/* <Slider /> */}
     </section>
   );
 }

@@ -32,19 +32,19 @@ const navbarLinks = [
 const socialLinks = [
   {
     label: 'X',
-    url: 'https://x.com/hetaridev',
+    url: 'https://x.com/sifatrahman07',
   },
   {
     label: 'Telegram',
-    url: 'https://t.me/e_1_e',
+    url: 'https://t.me/shifat_rahman',
   },
   {
     label: 'GitHub',
-    url: 'https://github.com/hetari',
+    url: 'https://github.com/MdSHiFaTRaHMaN',
   },
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    url: 'https://www.linkedin.com/in/sifatrahman07/',
   },
 ];
 

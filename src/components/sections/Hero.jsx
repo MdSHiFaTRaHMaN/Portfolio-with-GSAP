@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import MyName from '../design/MyName';
 import Star from '../design/Star';
 import Button from '../common/Button';
-import { profile } from '@/lib/images';
+import { hero } from '@/lib/images';
 import { getAvailableForWorkDate, textSplitterIntoChar } from '@/lib/functions';
 
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
 
   useEffect(() => {
     const rawText =
-      'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.';
+      'A freelance web developer, passionate about using modern technologies to deliver unique and scalable web solutions.';
     setWhoAmIHtml(textSplitterIntoChar(rawText));
     setAvailableDate(getAvailableForWorkDate());
   }, []);
@@ -32,8 +32,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:column-gap spacing-t grid w-full grid-cols-12">
-            <div className="col-span-full flex flex-col items-start gap-14 sm:col-span-4">
+          <div className="lg:column-gap spacing-t grid w-full grid-cols-12 gap-y-6 sm:gap-y-0">
+            <div className="col-span-12 flex flex-col items-start gap-6 sm:gap-14 sm:col-span-4">
               <div className="overflow-hidden">
                 <svg
                   id="down-arrow"
@@ -56,8 +56,9 @@ export default function Hero() {
               </div>
 
               <p className="sr-only">
-                A freelance full-stack developer, cutting-edge technologies to
-                deliver comprehensive solutions for your business.
+                A freelance developer, passionate about using modern
+                technologies to deliver comprehensive solutions for your
+                business.
               </p>
               <p
                 id="whoAmI"
@@ -65,35 +66,35 @@ export default function Hero() {
                 dangerouslySetInnerHTML={{ __html: whoAmIHtml }}
               ></p>
 
-              <div className="relative origin-left overflow-hidden sm:scale-150">
+              <div className="relative origin-left overflow-hidden scale-110 sm:scale-150">
                 <div id="contact-btn" className="flex -translate-y-full">
-                  <Button label="Get in touch" url="https://wa.me/967775367671" />
+                  <Button label="Get in touch" url="https://wa.me/8801724683220" />
                 </div>
               </div>
             </div>
 
             <div
               id="profile-container"
-              className="relative col-span-4 mt-10 h-[20vh] max-w-lg flex-col rounded-lg select-none sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+              className="group relative col-span-6 sm:col-span-4 h-[220px] xs:h-[260px] max-w-lg flex-col rounded-xl select-none sm:h-full md:flex md:h-[50vh] overflow-hidden border border-flax-smoke-500/20 shadow-xl transition-all duration-500 hover:border-flax-smoke-500/40"
             >
               <div className="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
               <img
                 id="profile-img"
-                src={profile}
-                alt="Ebraheem profile"
-                className="size-full scale-90 rounded-lg object-cover object-top brightness-110 grayscale"
+                src={hero}
+                alt="Sifat Rahman web developer"
+                className="size-full scale-95 rounded-xl object-cover object-[50%_35%] brightness-105 contrast-[1.08] grayscale transition-transform duration-700 ease-out group-hover:scale-100"
               />
             </div>
 
-            <div className="relative col-span-8 size-full overflow-clip text-end sm:col-span-4">
+            <div className="relative col-span-6 sm:col-span-4 size-full overflow-clip text-end flex flex-col justify-end">
               <div
                 id="available-for-work"
-                className="absolute right-0 bottom-0 flex translate-y-full flex-col items-end"
+                className="flex translate-y-full flex-col items-end sm:absolute sm:right-0 sm:bottom-0"
               >
-                <p className="3xl:text-base block leading-snug font-medium -tracking-tight uppercase">
+                <p className="text-xs sm:text-sm 3xl:text-base block leading-snug font-medium -tracking-tight uppercase text-flax-smoke-400">
                   Available for freelance work
                 </p>
-                <h3 className="3xl:heading-1 heading-1-alt font-fancy block leading-none font-bold -tracking-tight">
+                <h3 className="text-2xl sm:text-4xl 3xl:heading-1 heading-1-alt font-fancy block leading-none font-bold -tracking-tight text-flax-smoke-200">
                   {availableDate}
                 </h3>
               </div>

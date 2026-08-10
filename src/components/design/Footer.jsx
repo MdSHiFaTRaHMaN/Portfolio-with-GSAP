@@ -18,7 +18,7 @@ export default function Footer() {
 
   useEffect(() => {
     const updateTimes = () => {
-      setMyLocalTime(moment.tz('Asia/Aden').format('h:mm:ss a'));
+      setMyLocalTime(moment.tz('Asia/Dhaka').format('h:mm:ss a'));
       const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
       setUserLocalTime(moment.tz(userTimeZone).format('h:mm:ss a'));
     };
@@ -37,13 +37,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative flex flex-col items-center justify-center gap-20 p-[2%]">
-      <div className="grid w-full grid-cols-2 text-base sm:gap-x-6 md:grid-cols-12">
+    <footer className="relative flex flex-col items-center justify-center gap-12 sm:gap-20 p-[4%] sm:p-[2%]">
+      <div className="grid w-full grid-cols-2 text-base gap-y-8 sm:gap-x-6 md:grid-cols-12">
         {footerSections.map((section) => (
           <div
             key={section.title}
-            className={`flex flex-col md:col-span-3 ${
-              section.title === 'Menu' ? 'md:col-span-6' : ''
+            className={`flex flex-col col-span-1 md:col-span-3 ${
+              section.title === 'Menu' ? 'col-span-2 md:col-span-6' : ''
             }`}
           >
             <p className="heading-5 border-flax-smoke-400 w-full border-b pb-2 font-bold">
@@ -64,16 +64,16 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="grid w-full grid-cols-12">
-        <div className="col-span-7 place-content-center md:col-span-6">
+      <div className="grid w-full grid-cols-12 gap-y-6">
+        <div className="col-span-12 sm:col-span-7 place-content-center md:col-span-6">
           <h6 className="heading-4 sm:heading-2 leading-none font-bold">
-            © {new Date().getFullYear()} Huy <br />
+            © {new Date().getFullYear()} Sifat Rahman <br />
             All rights reserved.
           </h6>
         </div>
 
-        <div className="col-span-5 place-content-center max-sm:place-content-end md:col-span-3">
-          <p className="heading-6 font-bold uppercase">Hetari's Local time</p>
+        <div className="col-span-12 sm:col-span-5 place-content-center max-sm:place-content-start md:col-span-3">
+          <p className="heading-6 font-bold uppercase">Sifat's Local time</p>
           <p className="heading-6">{myLocalTime}</p>
           <p className="heading-6 font-bold uppercase">Your Local time</p>
           <p className="heading-6">{userLocalTime}</p>

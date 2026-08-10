@@ -205,14 +205,14 @@ export default function Works() {
           id="selected-works-text"
           className="md:column-gap text-flax-smoke-300 mt-[5%] grid grid-cols-12 justify-end opacity-0 lg:grid"
         >
-          <p className="heading-6 text-flax-smoke-300/85 col-span-4 text-center text-nowrap lg:col-start-2">
+          <p className="heading-6 text-flax-smoke-300/85 col-span-12 text-center text-nowrap lg:col-span-4 lg:col-start-2">
             ({' '}
             <span className="inline sm:hidden">
               {selectedWorksProps.length}{' '}
             </span>
             PROJECTS )
           </p>
-          <p className="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold lg:col-span-7">
+          <p className="heading-4 font-fancy col-span-12 w-full text-balance sm:font-semibold lg:col-span-7">
             Featured client projects that have been meticulously crafted with
             passion and purpose over the years.
           </p>
@@ -263,7 +263,7 @@ export default function Works() {
                     <h3 className="heading-3 font-title! font-bold uppercase">
                       {work.name}
                     </h3>
-                    <div className="flex gap-1.5 select-none">
+                    <div className="flex flex-wrap gap-1.5 select-none mt-2 sm:mt-0">
                       {work.tags.map((tag) => (
                         <p
                           key={tag}

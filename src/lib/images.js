@@ -1,5 +1,6 @@
 const profile = '/assets/images/profile.webp';
-const profile2 = '/assets/images/profile2.webp';
+const hero = '/assets/images/sifatrahman.jpg';
+const profile2 = '/assets/images/shifatrahman2.jpg';
 const mohammad = '/assets/images/mohammad.webp';
 const esmail = '/assets/images/esmail.webp';
 const workBg1 = '/assets/images/1.webp';
@@ -10,6 +11,7 @@ const workBg5 = '/assets/images/5.webp';
 
 export {
   profile,
+  hero,
   profile2,
   mohammad,
   esmail,

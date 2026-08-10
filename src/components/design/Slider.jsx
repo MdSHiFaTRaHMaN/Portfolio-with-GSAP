@@ -26,7 +26,7 @@ export default function Slider() {
       quote:
         'Collaborating with Hetari on multiple projects has been a true pleasure. His exceptional skills, attention to detail, and commitment to quality consistently made him an invaluable asset to the team.',
       author: 'Mohammad AL-Sulami',
-      position: 'Full Stack Developer',
+      position: 'Front-End Developer',
       tags: ['Web Development', 'Animation', 'UI/UX'],
       profile: mohammad,
     },
@@ -191,16 +191,14 @@ export default function Slider() {
 
           <div className="columns-gap relative order-first col-span-full flex h-[60vh] w-full items-start justify-center overflow-clip max-sm:order-last lg:order-last lg:col-span-6 lg:h-full">
             <img
-              className={`relative z-10 size-full rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale lg:h-[85svh] ${
-                index !== 0 ? 'hidden' : ''
-              }`}
+              className={`relative z-10 size-full rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale lg:h-[85svh] ${index !== 0 ? 'hidden' : ''
+                }`}
               src={people[0].profile}
               alt=""
             />
             <img
-              className={`relative z-10 size-full rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale lg:h-[85svh] ${
-                index !== 1 ? 'hidden' : ''
-              }`}
+              className={`relative z-10 size-full rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale lg:h-[85svh] ${index !== 1 ? 'hidden' : ''
+                }`}
               src={people[1].profile}
               alt=""
             />

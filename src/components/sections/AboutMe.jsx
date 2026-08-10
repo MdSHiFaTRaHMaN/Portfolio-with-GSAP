@@ -72,7 +72,7 @@ export default function AboutMe() {
           <img
             src={profile2}
             className="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
-            alt="Headshot of Ebraheem facing a camera"
+            alt="Sifat Rahman web developer"
           />
         </div>
         <div className="col-span-11 mt-10 md:col-span-8 md:col-start-6">

@@ -83,7 +83,7 @@ export default function Marquee() {
   return (
     <section
       id="marquee-section"
-      className="text-flax-smoke-200 relative mb-50 h-fit w-full overflow-clip leading-none will-change-auto"
+      className="text-flax-smoke-200 relative mb-16 h-fit w-full overflow-clip leading-none will-change-auto"
     >
       <div
         id="marquee-1"
@@ -96,7 +96,7 @@ export default function Marquee() {
             key={`marquee-1-${i}`}
             className="sm:heading-1 flex w-full items-center text-3xl font-bold text-nowrap whitespace-nowrap max-sm:mx-6"
           >
-            Full Stack Developer
+            Front-End Developer
             <StarSvg />
           </h4>
         ))}
@@ -112,7 +112,7 @@ export default function Marquee() {
             key={`marquee-2-${i}`}
             className="sm:heading-1 flex w-full items-center text-3xl font-bold text-nowrap whitespace-nowrap max-sm:mx-6"
           >
-            Full Stack Developer
+            Shopify Developer
             <StarSvg />
           </h4>
         ))}

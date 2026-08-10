@@ -16,7 +16,7 @@ export default function ServicesCard({
         <span className="col-span-2 self-center text-nowrap">
           {`( 0${number} )`}
         </span>
-        <h3 className="col-span-6 col-start-5 text-nowrap">{title}</h3>
+        <h3 className="col-span-6 col-start-5 text-wrap sm:text-nowrap">{title}</h3>
         <div
           dangerouslySetInnerHTML={{ __html: shape }}
           className="heading-size-3 hidden animate-[spin_10s_linear_infinite] fill-flax-smoke-400/50 lg:block"

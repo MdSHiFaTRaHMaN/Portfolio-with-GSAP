@@ -51,7 +51,7 @@ export default function Contact() {
             dangerouslySetInnerHTML={{ __html: makeItHappenHtml }}
           ></h3>
           <div className="mt-[5%] flex scale-150 items-center lg:scale-[1.5] xl:scale-[3] 2xl:scale-[3.5]">
-            <Button label="Get in touch" url="https://wa.me/967775367671" />
+            <Button label="Get in touch" url="https://wa.me/01724683220" />
           </div>
         </div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
                 Working Globally
               </p>
               <p className="flex size-full items-center justify-start pr-2 pl-1">
-                Available Sep '24
+                Available Now
               </p>
             </div>
           </div>
@@ -79,9 +79,9 @@ export default function Contact() {
             <p className="w-full font-bold uppercase">For further inquiries</p>
             <Link
               className="text-flax-smoke-300 h-6 text-right font-medium tracking-wider lowercase"
-              label="hetari4all@gmail"
+              label="shifatrahmanwebdev@gmail.com"
               icon={true}
-              url="mailto:hetari4all@gmail"
+              url="mailto:shifatrahmanwebdev@gmail.com"
             />
           </div>
         </div>

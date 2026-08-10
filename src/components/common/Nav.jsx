@@ -50,7 +50,7 @@ export default function Nav({ className = '', onLockScroll }) {
     <>
       <BurgerMenuBtn
         onClick={toggleBtnClickAnimation}
-        className="z-9999 scale-0 drop-shadow-lg"
+        className="z-9999 scale-100 md:scale-0 drop-shadow-lg"
         id="burger"
       />
 
@@ -99,8 +99,8 @@ export default function Nav({ className = '', onLockScroll }) {
               <Link
                 className="font-medium tracking-wider"
                 tag="p"
-                label="hetari4all@gmail.com"
-                url="mailto:hetari4all@gmail.com"
+                label="shifatrahmanwebdev@gmail.com"
+                url="mailto:shifatrahmanwebdev@gmail.com"
               />
               <div className="mt-6 flex flex-wrap justify-start gap-1">
                 {socialLinks.map((social) => (
@@ -120,7 +120,7 @@ export default function Nav({ className = '', onLockScroll }) {
       <header
         className={`padding-x absolute inset-0 z-20 h-fit -translate-y-full pt-6 will-change-auto ${className}`}
       >
-        <nav className="flex justify-between">
+        <nav className="flex items-center justify-between">
           <MagneticEffect
             magnetoStrengthVal={20}
             magnetoTextStrengthVal={10}
@@ -140,14 +140,8 @@ export default function Nav({ className = '', onLockScroll }) {
             </div>
           </MagneticEffect>
 
-          <div className="flex justify-start">
-            {/* <p className="heading-6 font-fancy text-flax-smoke-400 hidden font-bold uppercase select-none md:block">
-              available for freelancers <br />
-              work and collaboration
-            </p> */}
-          </div>
           <div className="flex">
-            <ul className="w-full flex-1 gap-1 overflow-y-hidden text-lg font-medium md:flex md:gap-2 md:text-xl lg:gap-4 lg:text-2xl xl:text-3xl">
+            <ul className="hidden w-full flex-1 gap-1 overflow-y-hidden text-lg font-medium md:flex md:gap-2 md:text-xl lg:gap-4 lg:text-2xl xl:text-3xl">
               {navLinks.map((l, index) => (
                 <Link
                   key={l.label}

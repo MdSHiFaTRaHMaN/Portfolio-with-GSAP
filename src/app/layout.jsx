@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Ebraheem Alhetari - Portfolio',
-  description: 'A freelance full-stack developer making good shit since 2023.',
+  title: 'Sifat Rahman',
+  description: 'A freelance web developer making good shit since 2025.',
 };
 
 export default function RootLayout({ children }) {
